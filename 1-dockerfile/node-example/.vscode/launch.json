@@ -1,0 +1,48 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "0. Launch koal debug",
+      "program": "${workspaceFolder}/src/index.js",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "1. Launch koal debug",
+      "preLaunchTask": "buildDev",
+      "program": "${workspaceFolder}/src/index.js",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "2. Launch koal debug",
+      "preLaunchTask": "watch",
+      "program": "${workspaceFolder}/src/index.js",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
+      "sourceMaps": true
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "${workspaceFolder}/node_modules/nodemon/bin/nodemon.js",
+      "name": "3. Launch koal hotstart",
+      "preLaunchTask": "watch",
+      "program": "${workspaceFolder}/src/index.js",
+      "outFiles": [ "${workspaceRoot}/dist/**/*.js" ],
+      "restart": true,
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+
+    },
+  ]
+}  

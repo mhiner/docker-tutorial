@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "watch",
+      "type": "shell",
+      "command":["yarn","watch"],
+      "isBackground": true
+    },
+    {
+      "label": "buildDev",
+      "type": "shell",
+      "command":["yarn","buildDev"],
+      "isBackground": false
+    },    
+    {
+      "label": "start",
+      "type": "shell",
+      "command":["yarn","start"],
+      "isBackground": true
+    },
+  ]
+}
